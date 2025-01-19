@@ -10,11 +10,13 @@ int hello(void *ctx) {
 }
 """
 
-# load BPF program
+# Load and Attach eBPF program
 b = BPF(text=prog)
 b.attach_kprobe(event=b.get_syscall_fnname("execve"), fn_name="hello")
 
-# header
+print("Program is running...")
+
+# Header
 print("%-18s %-16s %-6s %s" % ("TIME(s)", "COMM", "PID", "MESSAGE"))
 
 # format output
