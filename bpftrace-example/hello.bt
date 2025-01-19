@@ -1,0 +1,4 @@
+tracepoint:syscalls:sys_enter_execve {
+    printf("Hello world\n");
+}
+
