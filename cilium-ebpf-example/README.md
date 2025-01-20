@@ -1,5 +1,12 @@
 # Cilium ebpf Example
 
+## Install dependencies
+
+To add `ebpf-go` as a dependency to an existing Go module, run this from within the module's directory:
+```
+go get github.com/cilium/ebpf
+```
+
 ## Compile & Run
 
 [bpf2go](https://pkg.go.dev/github.com/cilium/ebpf/cmd/bpf2go) makes it extremely easy to compile and run eBPF program. You just have to run:
