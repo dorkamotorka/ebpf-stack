@@ -7,4 +7,4 @@ If you want to give it a try yourself, clone the repo using:
 git clone --recurse-submodules git@github.com:dorkamotorka/ebpf-stack.git
 ```
 
-Refer to subdirectories for instruction on how to run examples in different programming languages.
+Refer to subdirectories for instruction on the respective programming language library.
