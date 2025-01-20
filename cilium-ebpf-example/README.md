@@ -7,7 +7,7 @@ go generate
 sudo ./hello
 ```
 
-by default, `bpf2go` internally uses `clang` with some helpful default flags. Among them are:
+By default, `bpf2go` internally uses `clang` with some helpful default flags. Among them are:
 
 - `-g`: Includes debug information, which is necessary for BTF.
 
