@@ -11,7 +11,7 @@ sudo apt-get install libbpf-dev make clang llvm libelf-dev
 
 First compile it using `clang`:
 ```
-clang -O2 -c -target bpf -o hello.bpf.o hello.bpf.c
+clang -O2 -c -g -target bpf -o hello.bpf.o hello.bpf.c
 CC=gcc CGO_CFLAGS="-I /usr/include/bpf" CGO_LDFLAGS="/usr/lib/x86_64-linux-gnu/libbpf.a" go build -o hello
 ```
 
