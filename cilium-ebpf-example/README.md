@@ -16,6 +16,10 @@ go generate
 sudo ./hello
 ```
 
+By running random commands in another terminal, you should be able to see `Hello World` logs under `sudo bpftool prog trace` command.
+
+## Additional Notes
+
 By default, `bpf2go` internally uses `clang` with some helpful default flags. Among them are:
 
 - `-g`: Includes debug information, which is necessary for BTF.
